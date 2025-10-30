@@ -1,0 +1,277 @@
+:root {
+   
+    /* NOVAS CORES: TONS DE CINZA ESCURO UNIFICADO */
+    --cor-principal: #555555; /* Cinza Médio Escuro (Destaque, Borda, Botões) */
+    --cor-secundaria: #444444; /* Cinza Escuro (Fundo Header/Footer) */
+    --cor-texto: #222222; /* Quase Preto (Texto Principal) */
+    --cor-fundo-claro: #EEEEEE; /* Cinza Muito Claro (Fundo das seções claras) */
+    --cor-branco: #FFFFFF; /* Branco Puro */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    /* FONTE BASE AUMENTADA */
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.7; /* Aumentado para melhor leitura */
+    font-size: 1.1em; /* Fonte base aumentada */
+    color: var(--cor-texto);
+    background-color: var(--cor-branco);
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+
+h1 {
+    /* ESCALA DE FONTE AUMENTADA */
+    font-size: 3.5em; 
+    color: var(--cor-secundaria);
+    margin-bottom: 5px;
+}
+
+h2 {
+    /* ESCALA DE FONTE AUMENTADA */
+    text-align: center;
+    font-size: 2.8em; 
+    color: var(--cor-principal);
+    margin-bottom: 40px;
+    
+    border-bottom: 3px solid var(--cor-principal); 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    /* ESCALA DE FONTE AUMENTADA */
+    color: var(--cor-secundaria);
+    margin-top: 20px;
+    font-size: 1.6em;
+}
+
+
+header {
+    background: var(--cor-secundaria);
+    color: var(--cor-branco);
+    padding: 80px 0; 
+    text-align: center;
+}
+
+header h1 {
+    color: var(--cor-branco); /* Título Principal em Branco para contraste */
+}
+
+header .subtitulo {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+}
+
+
+header nav a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 700;
+    transition: color 0.3s;
+    /* Manter links em caixa alta conforme pedido anterior (opcional, pode ser removido) */
+    text-transform: uppercase;
+    font-size: 1em; /* Relativo ao body */
+}
+
+header nav a:hover {
+    color: var(--cor-fundo-claro); /* Cinza muito claro no hover */
+}
+
+
+section {
+    padding: 80px 0;
+}
+
+
+.bg-claro {
+    background-color: var(--cor-fundo-claro); 
+}
+
+
+#sobre h2 {
+    display: block; 
+}
+
+
+.item-lista {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-left: 3px solid var(--cor-principal); 
+}
+
+
+.habilidades {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px; /* Aumentado */
+    margin-top: 20px;
+}
+
+.habilidades li {
+    background: var(--cor-principal);
+    color: var(--cor-branco);
+    padding: 10px 18px; /* Aumentado */
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+
+.experiencia-item {
+    margin-bottom: 30px;
+    padding: 25px; /* Aumentado */
+    border: 1px solid var(--cor-fundo-claro);
+    border-radius: 8px;
+    background: var(--cor-branco);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.experiencia-item .empresa {
+    font-style: italic;
+    color: var(--cor-principal); 
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.experiencia-item ul {
+    margin-left: 20px;
+    font-size: 0.95em;
+}
+
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Aumentado o minmax */
+    gap: 30px;
+}
+
+.projeto-card {
+    background: var(--cor-branco);
+    padding: 25px; /* Aumentado */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projeto-card .tecnologias {
+    font-size: 0.95em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.botao-projeto {
+    display: inline-block;
+    background: var(--cor-principal);
+    color: var(--cor-branco);
+    padding: 12px 20px; /* Aumentado */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px; /* Aumentado */
+    font-weight: 700;
+    transition: background 0.3s;
+    font-size: 1em;
+}
+
+.botao-projeto:hover {
+    background: var(--cor-secundaria); 
+}
+
+
+
+footer {
+    background: var(--cor-secundaria);
+    color: var(--cor-fundo-claro);
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer h2 {
+    color: var(--cor-branco);
+    border-bottom-color: var(--cor-branco);
+}
+
+footer address p {
+    margin: 15px 0; /* Aumentado */
+}
+
+footer a {
+    color: var(--cor-branco); /* Branco para links no footer escuro */
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor-principal);
+}
+
+footer .copy {
+    margin-top: 30px;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+
+
+@media (max-width: 768px) {
+    
+    /* Ajustes para telas menores */
+    body {
+        font-size: 1em; /* Diminui um pouco a fonte base em telas pequenas */
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+    
+    header {
+        padding: 50px 0;
+    }
+
+    
+    header nav a {
+        display: block; 
+        margin: 10px auto;
+        font-size: 1em;
+    }
+    
+    
+    section {
+        padding: 40px 0;
+    }
+
+    
+    .habilidades {
+        justify-content: center;
+    }
+
+    
+    .container {
+        padding: 20px;
+    }
+}
