@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfólio Pessoal - Diego Sena</title>
+<style>
+  /* --- Estilos Gerais e Reset --- */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    background: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  a {
+    color: #4b6cb7;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* --- Cabeçalho (Header) --- */
+  header {
+    background: #4b6cb7;
+    background: linear-gradient(to right, #184c9b, #4b6cb7);
+    color: #fff;
+    padding: 30px 0 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Contatos no Header */
+  .header-contact {
+    margin: 10px 0 20px 0;
+    font-size: 0.95em;
+  }
+  .header-contact strong { 
+    font-weight: 700; 
+  }
+  .header-contact a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+  .header-contact a:hover {
+    color: #ffe082;
+    text-decoration: underline;
+  }
+  
+  nav {
+    margin-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 15px;
+  }
+  nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #ffe082;
+    text-decoration: none;
+  }
+
+  /* --- Conteúdo Principal (Main) --- */
+  main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 25px;
+  }
+  section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+  }
+  h2 {
+    border-bottom: 3px solid #184c9b;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #184c9b;
+    font-size: 2em;
+    font-weight: 600;
+  }
+  
+  /* --- Projetos e Habilidades --- */
+  .projects, .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .project, .skill {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .project:hover, .skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  }
+  .project h3, .skill h3 {
+    margin-top: 0;
+    color: #4b6cb7;
+    font-size: 1.4em;
+    text-transform: capitalize;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Negrito geral para o texto dos parágrafos, conforme solicitado */
+  .project p, .skill p, #contato p, #contato a {
+    font-weight: bold;
+  }
+
+  /* --- Contato --- */
+  #contato p {
+    margin: 10px 0;
+    font-size: 1.1em;
+  }
+  #contato a {
+    word-break: break-all;
+    font-weight: bold;
+    color: #184c9b; /* Mantenho a cor padrão do link no conteúdo principal */
+  }
+  
+  /* --- Rodapé (Footer) --- */
+  footer {
+    /* MUDANÇA AQUI: Cor de fundo igual ao Header */
+    background: linear-gradient(to right, #184c9b, #4b6cb7); 
+    color: #eee;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.95em;
+    text-transform: capitalize;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.15); /* Sombra invertida */
+  }
+  /* Negrito no footer */
+  footer p {
+      font-weight: bold;
+  }
+  
+  /* --- Responsivo --- */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.2em;
+    }
+    .header-contact {
+        margin: 10px 0;
+    }
+    .header-contact a {
+        display: block;
+        margin: 5px 0;
+    }
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+    .projects, .skills {
+      flex-direction: column;
+      gap: 20px;
+    }
+    section {
+      padding: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>DIEGO SENA</h1>
+  
+  <div class="header-contact">
+    <strong>
+      <a href="mailto:diegosena286@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+      <a href="https://www.linkedin.com/in/diego-sena-de-oliveira-7b249137b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/diegosena" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </strong>
+  </div>
+  
+  <nav>
+    <a href="#projetos">Projetos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#contato">Mais Contato</a>
+  </nav>
+</header>
+
+<main>
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Portal Web Institucional</h3>
+        <p>Desenvolvimento de um portal institucional com HTML, CSS e JavaScript, focado em acessibilidade e responsividade.</p>
+      </div>
+      <div class="project">
+        <h3>Aplicativo de Gerenciamento de Tarefas</h3>
+        <p>Aplicativo web para gerenciamento de tarefas usando React e integração com REST API para o backend.</p>
+      </div>
+      <div class="project">
+        <h3>Ecommerce Simples com Integração</h3>
+        <p>Criação de uma interface de e-commerce utilizando React Hooks e consumindo dados de produtos de uma API fictícia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>HTML5 e CSS3</h3>
+        <p>Domínio na criação de layouts responsivos, semânticos e otimizados, incluindo Flexbox e Grid.</p>
+      </div>
+      <div class="skill">
+        <h3>JavaScript (ES6+)</h3>
+        <p>Experiência com programação dinâmica, manipulação de DOM, consumo de APIs assíncronas e testes unitários.</p>
+      </div>
+      <div class="skill">
+        <h3>React.js</h3>
+        <p>Desenvolvimento de interfaces interativas, componentes reutilizáveis e gerenciamento de estado com Context API ou Redux.</p>
+      </div>
+      <div class="skill">
+        <h3>Versionamento (Git)</h3>
+        <p>Uso prático de Git e GitHub para controle de versão, branching e colaboração em projetos de equipe.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="sobre-mim">
+    <h2><b>👋 Sobre Mim</b></h2>
+    <p class="intro-text">
+      <b>Olá! Sou Diego Sena de Oliveira, tenho 23 anos, estudante de Sistemas de Informação pela Faculdade UNIDESC.</b>
+    </p>
+    <p class="intro-text">
+      <b>Minha paixão é o desenvolvimento Front-end, focado em transformar ideias em interfaces digitais que oferecem uma excelente Experiência do Usuário (UX). Minha jornada é impulsionada pela busca por soluções semânticas e responsivas.</b>
+    </p>
+    <p class="intro-text">
+      <b>Possuo domínio em:</b>
+      <ul>
+        <li><b>HTML5, CSS3, JavaScript (ES6+)</b></li>
+        <li><b>Especialização em React.js para criação de componentes reutilizáveis e gerenciamento eficiente de estado.</b></li>
+      </ul>
+    </p>
+    <p class="intro-text">
+      <b>Acredito no poder do código limpo, do versionamento robusto com Git e da colaboração. Busco uma oportunidade desafiadora para aplicar meu conhecimento, aprendendo e contribuindo ativamente para a evolução de produtos digitais inovadores.</b>
+    </p>
+</section>
+  <section id="contato">
+    <h2>Mais Contato</h2>
+    <p>Sinta-se à vontade para entrar em contato. Você também pode acessar diretamente:</p>
+    
+    <p>
+      LinkedIn: 
+      <a href="https://www.linkedin.com/in/diego-sena-de-oliveira-7b249137b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/diego-sena-de-oliveira-7b249137b...</a>
+    </p>
+    
+    <p>
+      GitHub: 
+      <a href="https://github.com/diegosena" target="_blank" rel="noopener noreferrer">github.com/diegosena</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Diego Sena De Oliveira. Meu portfólio.</p>
+</footer>
+
+</body>
+</html>
