@@ -1,6 +1,6 @@
 :root {
    
-    /* NOVAS CORES: TONS DE CINZA ESCURO UNIFICADO */
+    
     --cor-principal: #555555; /* Cinza Médio Escuro (Destaque, Borda, Botões) */
     --cor-secundaria: #444444; /* Cinza Escuro (Fundo Header/Footer) */
     --cor-texto: #222222; /* Quase Preto (Texto Principal) */
@@ -16,7 +16,7 @@
 }
 
 body {
-    /* FONTE BASE AUMENTADA */
+    
     font-family: 'Roboto', sans-serif; 
     line-height: 1.7; /* Aumentado para melhor leitura */
     font-size: 1.1em; /* Fonte base aumentada */
@@ -34,14 +34,14 @@ body {
 
 
 h1 {
-    /* ESCALA DE FONTE AUMENTADA */
+    
     font-size: 3.5em; 
     color: var(--cor-secundaria);
     margin-bottom: 5px;
 }
 
 h2 {
-    /* ESCALA DE FONTE AUMENTADA */
+    
     text-align: center;
     font-size: 2.8em; 
     color: var(--cor-principal);
@@ -53,7 +53,7 @@ h2 {
 }
 
 h3 {
-    /* ESCALA DE FONTE AUMENTADA */
+    
     color: var(--cor-secundaria);
     margin-top: 20px;
     font-size: 1.6em;
@@ -83,9 +83,8 @@ header nav a {
     margin: 0 15px;
     font-weight: 700;
     transition: color 0.3s;
-    /* Manter links em caixa alta conforme pedido anterior (opcional, pode ser removido) */
     text-transform: uppercase;
-    font-size: 1em; /* Relativo ao body */
+    font-size: 1em; 
 }
 
 header nav a:hover {
@@ -216,7 +215,7 @@ footer address p {
 }
 
 footer a {
-    color: var(--cor-branco); /* Branco para links no footer escuro */
+    /* color: var(--cor-branco) */
     text-decoration: none;
     font-weight: 700;
 }
@@ -238,7 +237,7 @@ footer .copy {
     
     /* Ajustes para telas menores */
     body {
-        font-size: 1em; /* Diminui um pouco a fonte base em telas pequenas */
+        font-size: 1em; /
     }
     
     h1 {
